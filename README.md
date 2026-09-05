@@ -1,9 +1,5 @@
 YAMATE~
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hoa Xoay Có Lá Cỏ – Của Đại Ca</title>
-    <style>
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             min-height: 100vh;
