@@ -1,0 +1,75 @@
+# web.BuiThanhh.com 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hoa Xoay Có Lá Cỏ – Của Đại Ca</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(#0b0c1e, #1a3a5c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hoa {
+            font-size: 100px;
+            filter: drop-shadow(0 0 20px #ff69b4) drop-shadow(0 0 35px #ffaacc);
+            animation: xoayRiêng 5s linear infinite;
+            z-index: 2;
+        }
+
+        @keyframes xoayRiêng {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+
+        /* Lá và cỏ trang trí xung quanh */
+        .la, .co {
+            position: absolute;
+            font-size: 22px;
+            color: #88ff88;
+            filter: drop-shadow(0 0 8px #44ff44);
+            animation: bay 6s ease-in-out infinite;
+        }
+
+        .la  { content: "🍃"; }
+        .co  { content: "🌿"; }
+
+        /* Vài vị trí trang trí xung quanh */
+        .la1 { top: 10%; left: 15%;  animation-delay: 0s; }
+        .la2 { top: 15%; right: 20%; animation-delay: 1s; }
+        .la3 { bottom: 20%; left: 10%; animation-delay: 2s; }
+        .co1 { bottom: 12%; right: 15%; animation-delay: 0.5s; }
+        .co2 { top: 25%; left: 8%;  animation-delay: 1.5s; }
+        .co3 { bottom: 18%; right: 25%; animation-delay: 2.5s; }
+
+        @keyframes bay {
+            0%  { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+            50% { transform: translateY(-12px) rotate(10deg); opacity: 1; }
+            100%{ transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Lá cỏ trang trí -->
+    <div class="la la1">🍃</div>
+    <div class="la la2">🍃</div>
+    <div class="la la3">🍃</div>
+    <div class="co co1">🌿</div>
+    <div class="co co2">🌿</div>
+    <div class="co co3">🌿</div>
+
+    <!-- Các bông hoa tách riêng, xoay tại chỗ -->
+    <div class="hoa">🌺</div>
+    <div class="hoa">🌸</div>
+    <div class="hoa">🌼</div>
+    <div class="hoa">🌻</div>
+
+</body>
+</html>
